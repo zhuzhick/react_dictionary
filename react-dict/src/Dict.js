@@ -26,8 +26,12 @@ const Dict = () => {
 	return (
 		<div className="row">
 			<div className="col-md-12">
-				<form onSubmit={search}>
+				<h1 className="display-4 text-center">
+					Find the meaning of the word:
+				</h1>
+				<form className="mb-1" onSubmit={search}>
 					<input
+						className="form-control"
 						type="search"
 						onChange={handleKeywordChange}
 						autoFocus={true}

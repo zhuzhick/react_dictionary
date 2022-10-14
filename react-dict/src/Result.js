@@ -6,7 +6,9 @@ const Result = (props) => {
 		return (
 			<div className="row">
 				<div className="col-md-12">
-					<h2>{props.result.word}</h2>
+					<h2 className="text-primary text-center text-xl">
+						{props.result.word}
+					</h2>
 					{props.result.meanings.map(function (meaning, index) {
 						return (
 							<div key={index}>

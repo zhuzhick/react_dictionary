@@ -1,3 +1,28 @@
 .App {
-	text-align: center;
+	width: 480px;
+	margin: 0 auto;
+}
+
+.text-justify {
+	text-align: justify;
+}
+
+.text-meaning {
+	font-size: 16px;
+}
+
+.text-meaning {
+	font-weight: 600;
+}
+
+.text-example {
+	font-weight: 400;
+}
+
+.text-xl {
+	font-size: 48px;
+}
+
+.developer a {
+	text-decoration: none;
 }
