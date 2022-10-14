@@ -1,11 +1,18 @@
+import Dict from "./Dict";
+import Developer from "./Developer";
+
+import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 
-function App() {
+const App = () => {
 	return (
 		<div className="App">
-			<h1>Dictionary</h1>
+			<div className="container">
+				<Dict />
+				<Developer />
+			</div>
 		</div>
 	);
-}
+};
 
 export default App;
