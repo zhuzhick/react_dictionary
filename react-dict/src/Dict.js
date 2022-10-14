@@ -1,15 +1,22 @@
 import React, { useState } from "react";
+import axios from "axios";
 
 const Dict = () => {
 	const [keyword, setKeyword] = useState("");
 
 	const search = (event) => {
 		event.preventDefault();
-		alert(`Searching for ${keyword}`);
+		let apiURL = `https://api.dictionaryapi.dev/api/v2/entries/en/${keyword}`;
+		axios.get(apiURL).then(handleResponse);
+
 	};
 
 	const handleKeywordChange = (event) => {
 		setKeyword(event.target.value);
+	};
+
+	const handleResponse = (response) => {
+		console.log(response.data);
 	};
 
 	return (
