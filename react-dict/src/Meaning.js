@@ -1,4 +1,5 @@
 import React from "react";
+import Synonyms from "./Synonyms";
 
 const Meaning = (props) => {
 	return (
@@ -15,6 +16,7 @@ const Meaning = (props) => {
 							<em className="blockquote text-meaning text-example">
 								{definition.example}
 							</em>
+							<Synonyms synonyms={definition.synonyms} />
 						</p>
 					</div>
 				);
