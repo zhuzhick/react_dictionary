@@ -1,5 +1,4 @@
 .App {
-	width: 480px;
 	margin: 0 auto;
 }
 
@@ -25,4 +24,13 @@
 
 .developer a {
 	text-decoration: none;
+}
+
+.synonyms {
+	padding: 0;
+}
+
+.synonyms li {
+	display: inline;
+	font-weight: 400;
 }
