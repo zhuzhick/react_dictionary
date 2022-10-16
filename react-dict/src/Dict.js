@@ -72,7 +72,9 @@ const Dict = () => {
 					</div>
 				</div>
 				<div className="row">
-					<Developer />
+					<div className="col-md-12">
+						<Developer />
+					</div>
 				</div>
 			</div>
 		</div>
